@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Compras</title>
+</head>
+<body>
+    <h1>Lista de compras:</h1>
+    <ul>
+	{% for compra in compras %}
+	<li>ID: {{ compra.id }}, Descripción: {{ compra.descripcion }}, Cantidad: {{ compra.cantidad }}</li>
+	{% endfor %}
+    </ul>
+</body>
+</html>
